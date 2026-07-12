@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #1e293b;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+html.dark body {
+  background-color: #020617; /* Slate 950 dark */
+  color: #f8fafc;
+}
+
+/* Custom scrollbars for a premium modern finish */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+
+/* Canh Buom Tri Thuc premium login */
+.login-premium {
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#e0f2fe,#eff6ff,#fefce8);
+}
+.login-card {
+  width:min(430px,92vw);
+  background:white;
+  border-radius:28px;
+  padding:36px;
+  box-shadow:0 20px 60px rgba(15,23,42,.15);
+}
+.login-card input {
+  width:100%;
+  padding:14px 16px;
+  border-radius:14px;
+  border:1px solid #cbd5e1;
+  margin-top:10px;
+}
+.login-card button {
+  width:100%;
+  margin-top:18px;
+  padding:14px;
+  border-radius:14px;
+  background:#2563eb;
+  color:white;
+  font-weight:700;
+}
