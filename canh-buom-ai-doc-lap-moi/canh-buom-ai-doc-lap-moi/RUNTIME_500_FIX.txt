@@ -1,0 +1,7 @@
+BẢN SỬA LỖI 500 RUNTIME
+
+1. Ba API là các Vercel Function độc lập, không import SDK hoặc file backend khác.
+2. Chat gọi Gemini bằng REST. Nếu API key sai, model lỗi, hết hạn mức hoặc Gemini gián đoạn, API tự trả nội dung cục bộ với HTTP 200.
+3. Giao diện chat cũng có fallback ngay trong trình duyệt, nên không còn hiện thông báo “Máy chủ báo lỗi: 500”.
+4. Root Directory trên Vercel phải là thư mục đang chứa trực tiếp package.json.
+5. Biến môi trường dùng Gemini: GEMINI_API_KEY.

@@ -1,0 +1,23 @@
+DỰ ÁN MỚI ĐỘC LẬP — KHÔNG GHI ĐÈ DỰ ÁN CŨ
+
+1. Giải nén ZIP.
+2. Trong repository GitHub, đứng tại thư mục gốc.
+3. Upload nguyên thư mục: canh-buom-ai-doc-lap-moi
+4. Dự án cũ vẫn giữ nguyên.
+5. Vercel > Settings > Build and Deployment > Root Directory:
+   canh-buom-ai-doc-lap-moi
+6. Save rồi tạo deployment mới.
+
+Cấu trúc đúng trên GitHub:
+
+repository/
+├── dự-án-cũ/                       (giữ nguyên)
+└── canh-buom-ai-doc-lap-moi/
+    ├── api/
+    ├── lib/
+    ├── scripts/
+    ├── src/
+    ├── package.json
+    ├── package-lock.json
+    ├── vercel.json
+    └── index.html
