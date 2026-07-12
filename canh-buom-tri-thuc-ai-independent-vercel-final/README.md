@@ -32,4 +32,4 @@ npm run check
 ## Bản sửa triển khai Vercel
 
 Bản này khóa Node.js 24.x và npm 10.9.2, dùng public npm registry, và không chứa đường dẫn registry nội bộ. Hãy tải toàn bộ nội dung ZIP lên thư mục gốc của repository; Root Directory trên Vercel để trống hoặc là `.`.
-Redeploy after fixing Root Directory
+Redeploy after updating Vercel Root Directory.
